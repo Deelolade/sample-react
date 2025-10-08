@@ -1,13 +1,17 @@
-import React from "react";
-const App = () => {
-  const handleClick = () => {
-    console.log("Button clicked !!")
-  }
-  return (
-    <>
-      <button onClick={handleClick}>Click me</button>
-    </>
-  );
-};
+import React from 'react'
+import PropsDisplay from './pages/PropsDisplay'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
-export default App;
+const App = () => {
+  return (
+    <div>
+      <Router>
+        <Routes>
+          <Route path="/props" element={<PropsDisplay />} />
+        </Routes>
+      </Router>
+    </div>
+  )
+}
+
+export default App
