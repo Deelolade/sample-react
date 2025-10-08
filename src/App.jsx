@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import UseState from './pages/UseState'
+import Form from './pages/Form'
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/props" element={<PropsDisplay />} />
           <Route path="/state" element={<UseState />} />
+          <Route path="/form" element={<Form />} />
         </Routes>
       </Router>
     </div>

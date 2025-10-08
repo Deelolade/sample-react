@@ -21,6 +21,11 @@ const Navbar = () => {
             Hook
           </NavLink>
         </li>
+        <li>
+          <NavLink to="/form" className="nav-item">
+            Form
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );
